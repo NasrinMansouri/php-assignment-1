@@ -55,10 +55,18 @@ $animals = [
 
 
 
+// Find animals without zookeepers //
 
+// filter function:
+// returns only the elements of the $animals array that
+// pass the given callback function.
 
-
-
+// isset function:
+// checks if the "comment" key exists in each element of the
+// $animals array before trying to access it
+$animals_without_zookeepers = array_filter($animals, function ($animal) {
+    return isset($animal['comment']) && $animal['comment'] === "hire a zookeeper";
+});
 
 
 

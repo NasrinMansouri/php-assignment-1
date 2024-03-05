@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP FIRST ASSIGNMENT</title>
 </head>
 
 <body>
@@ -35,6 +35,7 @@
             <h2>Animals</h2>
             <ul>
                 <?php foreach ($animals as $animal) : ?>
+                    <!-- using built in -empty function- to check if a variable exist or not -->
                     <?php if ($animal['amount'] > 0 && !empty($animal['comment'])) : ?>
                         <li><?= $animal['name'] ?></li>
                         <li> Amount: <?= $animal['amount'] ?></li>
@@ -47,6 +48,20 @@
                 <?php endforeach; ?>
             </ul>
 
+
+            <!-- Animals Without Zookeepers -->
+            <div>
+                <h2>Animals Without Zookeepers</h2>
+                <ul>
+                    <!-- Display animals without zookeepers -->
+                    <?php foreach ($animals_without_zookeepers as $animal) : ?>
+                        <li> <?= $animal['name'] ?></li>
+                        <li> Amount: <?= $animal['amount'] ?></li>
+                        <li>Comment: <?= $animal['comment'] ?></li>
+                        <br>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
         </div>
 
     </div>
