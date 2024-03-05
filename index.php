@@ -25,30 +25,30 @@ $zookeepers = [
 $animals = [
     [
         "name" => "Lions",
-        "Amount" => 5,
+        "amount" => 5,
         "comment" => "don't forget to feed them"
     ],
     [
         "name" => "Bears",
-        "Amount" => 2,
+        "amount" => 2,
         "comment" => "don't hug"
     ],
     [
         "name" => "Tigers",
-        "Amount" => 3,
+        "amount" => 3,
     ],
     [
         "name" => "Penguins",
-        "Amount" => 25,
+        "amount" => 25,
         "comment" => "one of the is ill"
     ],
     [
         "name" => "Elephants",
-        "Amount" => 15,
+        "amount" => 15,
     ],
     [
         "name" => "Leopards",
-        "Amount" => 2,
+        "amount" => 2,
         "comment" => "hire a zookeeper"
     ],
 ];
