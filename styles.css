@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(148, 156, 191);
+}
+
+li {
+  list-style-type: none;
+}
+
+.title {
+  margin-left: 15px;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.zookeeper-container,
+.animals-container {
+  background-color: rgb(191, 196, 219);
+  padding: 2rem;
+  width: 44%;
+}
+
+.without-keepers-container {
+  background-color: rgb(191, 196, 219);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.title-without-keepers {
+  /* margin: 15px; */
+  padding: 16px;
+}
